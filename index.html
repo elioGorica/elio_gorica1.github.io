@@ -222,8 +222,8 @@ Would you be part of the Hanseatic League or be part of the Bailiff of Yarmouth?
 
 (link: &quot;Return to Trade Battles&quot;)[
   (go-to: &quot;Trade Battles&quot;)
-]</tw-passagedata><tw-passagedata pid="28" name="Skip and continue" tags="" position="800,800" size="100,100">(link: &quot;Return to Trade Battles&quot;)[
-  (go-to: &quot;Trade Battles&quot;)
+]</tw-passagedata><tw-passagedata pid="28" name="Skip and continue" tags="" position="800,800" size="100,100">(link: &quot;Return to Trader&quot;)[
+  (go-to: &quot;Trader&quot;)
 ]</tw-passagedata><tw-passagedata pid="29" name="InterestedInJewelry" tags="" position="1025,825" size="100,100">You express interest in jewelry, and a trader presents a beautiful gemstone necklace. The price is steep, but it&#39;s exquisite. Will you make the purchase?
 
 [[Buy the necklace-&gt;BuyNecklace]]
@@ -241,16 +241,25 @@ Return back to the (link: &quot;Buyer&quot;)[
   (go-to: &quot;Buyer&quot;) 
 ] passage</tw-passagedata><tw-passagedata pid="32" name="Yes, I&#39;m interested in crafts and guilds" tags="" position="75,325" size="100,100">You, [($playerName)], express interest in crafts and guilds. A local guild offers you an apprenticeship. Will you join?
 
-[Join the guild]-&gt;[[JoinGuild]]
-Decline and continue exploring-&gt;[[ContinueExploring]]</tw-passagedata><tw-passagedata pid="33" name="No, I&#39;m not interested" tags="" position="175,500" size="100,100">You, [($playerName)], are not interested in crafts or guilds, and you continue your exploration.
-</tw-passagedata><tw-passagedata pid="34" name="JoinGuild" tags="" position="50,550" size="100,100">You, [($playerName)], decide to join the local guild and embark on a journey of craftsmanship.
+[[JoinGuild]]
+
+(link: &quot;Continue Exploring by going back to Introduction&quot;)[
+  (go-to: &quot;Introduction&quot;)
+]</tw-passagedata><tw-passagedata pid="33" name="No, I&#39;m not interested" tags="" position="175,500" size="100,100">You, [($playerName)], are not interested in crafts or guilds, and you continue your exploration.
+(link: &quot;Return to Introduction&quot;)[
+  (go-to: &quot;Introduction&quot;)
+]</tw-passagedata><tw-passagedata pid="34" name="JoinGuild" tags="" position="50,550" size="100,100">You, [($playerName)], decide to join the local guild and embark on a journey of craftsmanship.
 (link: &quot;Return to Merchant&quot;)[
   (go-to: &quot;Merchant&quot;)
-]</tw-passagedata><tw-passagedata pid="35" name="ContinueExploring" tags="" position="-100,575" size="100,100"></tw-passagedata><tw-passagedata pid="36" name="ExploreMerchantCourt" tags="" position="325,825" size="100,100">You, [($playerName)], decide to explore Merchant&#39;s Court, delving into the world of legal matters and commerce. 
+]</tw-passagedata><tw-passagedata pid="35" name="ExploreMerchantCourt" tags="" position="325,825" size="100,100">You, [($playerName)], decide to explore Merchant&#39;s Court, delving into the world of legal matters and commerce. 
 
 Here are some unique facts for you:
 
-Tudor England&#39;s merchant courts were vital centers of trade and justice. These courts spanned the nation, each with its rules, shaping the Tudor legal landscape. They emerged from medieval traditions but adapted to handle commercial disputes more effectively. Merchant court judges specialized in trade matters, ensuring informed decisions. These courts addressed not only legal disputes but also trade regulations, contracts, debts, and goods&#39; quality. They encouraged arbitration, speeding up resolutions. Merchant courts laid the groundwork for the &quot;Law Merchant,&quot; which still influences modern commercial law and international trade practices. Their historical records provide an invaluable window into Tudor trade, customs, and the emergence of modern business law.</tw-passagedata><tw-passagedata pid="37" name="ChooseVoyage" tags="" position="525,600" size="100,100">Do you want to join John Cabot on the &quot;Matthew&quot; or sail aboard the Mayflower to the New World, [$playerName]?
+Tudor England&#39;s merchant courts were vital centers of trade and justice. These courts spanned the nation, each with its rules, shaping the Tudor legal landscape. They emerged from medieval traditions but adapted to handle commercial disputes more effectively. Merchant court judges specialized in trade matters, ensuring informed decisions. These courts addressed not only legal disputes but also trade regulations, contracts, debts, and goods&#39; quality. They encouraged arbitration, speeding up resolutions. Merchant courts laid the groundwork for the &quot;Law Merchant,&quot; which still influences modern commercial law and international trade practices. Their historical records provide an invaluable window into Tudor trade, customs, and the emergence of modern business law.
+
+(link: &quot;Return to Introduction&quot;)[
+  (go-to: &quot;Introduction&quot;)
+]</tw-passagedata><tw-passagedata pid="36" name="ChooseVoyage" tags="" position="500,600" size="100,100">Do you want to join John Cabot on the &quot;Matthew&quot; or sail aboard the Mayflower to the New World, [$playerName]?
 
  (link: &quot;Join John Cabot on the &#39;Matthew&#39;&quot;)[
     (set: $chosenVoyage to &quot;Cabot&quot;)
@@ -261,7 +270,11 @@ Tudor England&#39;s merchant courts were vital centers of trade and justice. The
     (set: $chosenVoyage to &quot;Mayflower&quot;)
     (go-to: &quot;MayflowerVoyage&quot;)  [[MayflowerVoyage]]
 ]
-</tw-passagedata><tw-passagedata pid="38" name="CabotVoyage" tags="" position="450,975" size="100,100">John Cabot&#39;s 1497 voyage under the English flag led him to Newfoundland, Canada, but he mistakenly believed he&#39;d discovered Asia. This voyage marked England&#39;s early New World exploration.</tw-passagedata><tw-passagedata pid="39" name="MayflowerVoyage" tags="" position="600,975" size="100,100">The Mayflower voyage in 1620 carried 102 passengers, including &quot;Saints&quot; fleeing religious persecution and &quot;Strangers&quot; seeking adventure. This historic journey marked the Pilgrims&#39; pursuit of a new start in America.</tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="37" name="CabotVoyage" tags="" position="450,975" size="100,100">John Cabot&#39;s 1497 voyage under the English flag led him to Newfoundland, Canada, but he mistakenly believed he&#39;d discovered Asia. This voyage marked England&#39;s early New World exploration.</tw-passagedata><tw-passagedata pid="38" name="MayflowerVoyage" tags="" position="600,975" size="100,100">The Mayflower voyage in 1620 carried 102 passengers, including &quot;Saints&quot; fleeing religious persecution and &quot;Strangers&quot; seeking adventure. This historic journey marked the Pilgrims&#39; pursuit of a new start in America.
+
+(link: &quot;Return to Trader&quot;)[
+  (go-to: &quot;Trader&quot;)
+]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
